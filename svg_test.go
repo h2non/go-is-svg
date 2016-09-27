@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestDeterminateImageType(t *testing.T) {
+func TestIsSVG(t *testing.T) {
 	cases := []struct {
 		buf     []byte
 		matches bool
