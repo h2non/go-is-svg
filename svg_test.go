@@ -22,7 +22,7 @@ func TestIsSVG(t *testing.T) {
 	}
 
 	for _, test := range cases {
-		if IsSVG(test.buf) != test.matches {
+		if IsSVG(test.buf) != test.matches || Is(test.buf) != test.matches {
 			t.Fatalf("Invalid SVG type: %s", test.buf)
 		}
 	}
